@@ -1,0 +1,17 @@
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/viewpointThetaPhi 90 180
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate
+/vis/scene/endOfRunAction accumulate
+/vis/scene/add/axes 0 0 0 1 m
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/set 0 blue
+/vis/modeling/trajectories/drawByCharge-0/set 1 red
+/vis/modeling/trajectories/drawByCharge-0/set -1 green
+/vis/sceneHandler/select OGL
+/vis/viewer/select OGL
+/vis/viewer/set/lineSegmentsPerCircle 100
+
+/control/execute run.mac
